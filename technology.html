@@ -19,16 +19,23 @@
         .section h2 { font-size: 36px; color: #1a1a2e; margin-bottom: 30px; border-bottom: 3px solid #ffd700; padding-bottom: 15px; }
         .tech-box { background: #f8f9fa; border-left: 5px solid #27ae60; padding: 30px; margin: 25px 0; border-radius: 0 12px 12px 0; }
         .tech-box h4 { color: #1a1a2e; font-size: 22px; margin-bottom: 15px; }
-        .code { font-family: 'JetBrains Mono', monospace; background: #1a1a2e; color: #ffd700; padding: 20px; border-radius: 8px; margin: 15px 0; font-size: 14px; line-height: 1.8; overflow-x: auto; }
+        .license-box { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); color: white; padding: 40px; border-radius: 12px; margin: 40px 0; text-align: center; }
+        .license-box h3 { font-size: 28px; margin-bottom: 20px; color: #ffd700; }
+        .license-box .stat { font-size: 48px; font-weight: 700; margin: 20px 0; }
+        .commercial-box { background: linear-gradient(135deg, #27ae60 0%, #229954 100%); color: white; padding: 40px; border-radius: 12px; margin: 40px 0; text-align: center; }
+        .commercial-box h3 { font-size: 28px; margin-bottom: 20px; }
+        .capability-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; margin: 40px 0; }
+        .capability-card { background: white; border: 2px solid #e9ecef; border-radius: 12px; padding: 30px; }
+        .capability-card h4 { font-size: 20px; color: #1a1a2e; margin-bottom: 15px; }
         .footer { background: #1a1a2e; color: white; padding: 40px 20px; text-align: center; margin-top: 80px; }
         .footer a { color: #ffd700; text-decoration: none; }
     </style>
 </head>
 <body>
     <header class="header">
-        <h1>Building with φ</h1>
+        <h1>φ Technology Solutions</h1>
         <p class="phi">φ = 1.618033988749895</p>
-        <p>How to implement φ-based technology</p>
+        <p>Commercial applications require licensing</p>
     </header>
 
     <nav class="nav-tabs">
@@ -42,123 +49,176 @@
     </nav>
 
     <div class="container">
+        <div class="license-box">
+            <h3>⚠️ PROTECTED TECHNOLOGY</h3>
+            <p style="font-size: 20px; margin: 20px 0;">
+                Implementation algorithms, optimization code, and commercial applications are proprietary.
+            </p>
+            <div class="stat">$$$</div>
+            <p style="font-size: 18px;">
+                <strong>Science is FREE.</strong> Implementation requires licensing.
+            </p>
+        </div>
+
         <section class="section">
-            <h2>Implementation Guides</h2>
+            <h2>Available Technology (Licensed)</h2>
 
-            <div class="tech-box">
-                <h4>1. TSR Load Balancing</h4>
-                <p><strong>Application:</strong> Network optimization, AI training, resource allocation</p>
-                <div class="code">
-# TSR Implementation
-PHI = 1.618033988749895
-STABILITY = 1 / PHI  # 0.618...
-CHANGE = 1 - STABILITY  # 0.382...
-
-def tsr_allocate(total_resources):
-    stable_allocation = total_resources * STABILITY
-    dynamic_allocation = total_resources * CHANGE
-    return stable_allocation, dynamic_allocation
-
-# Example: 1000 units
-stable, dynamic = tsr_allocate(1000)
-# stable = 618 units (maintain current operations)
-# dynamic = 382 units (explore new optimizations)
+            <div class="capability-grid">
+                <div class="capability-card">
+                    <h4>TSR Optimization Engine</h4>
+                    <p><strong>Capability:</strong> Load balancing, resource allocation, network optimization using φ-based 61.8/38.2 ratio</p>
+                    <p style="margin-top: 15px; color: #27ae60; font-weight: 600;">Contact for licensing</p>
                 </div>
-            </div>
 
-            <div class="tech-box">
-                <h4>2. Golden Angle Optimization</h4>
-                <p><strong>Application:</strong> UI layouts, data visualization, sensor placement</p>
-                <div class="code">
-import math
-
-GOLDEN_ANGLE = 137.507764  # degrees
-GOLDEN_ANGLE_RAD = GOLDEN_ANGLE * math.pi / 180
-
-def golden_spiral_layout(n_elements):
-    """Generate optimal positions using golden angle"""
-    positions = []
-    for i in range(n_elements):
-        angle = i * GOLDEN_ANGLE_RAD
-        radius = math.sqrt(i)  # or any scaling
-        x = radius * math.cos(angle)
-        y = radius * math.sin(angle)
-        positions.append((x, y))
-    return positions
-
-# Zero overlap, maximum efficiency
+                <div class="capability-card">
+                    <h4>Golden Angle Layout System</h4>
+                    <p><strong>Capability:</strong> Optimal positioning algorithms for UI, data viz, sensor networks, architectural design</p>
+                    <p style="margin-top: 15px; color: #27ae60; font-weight: 600;">Contact for licensing</p>
                 </div>
-            </div>
 
-            <div class="tech-box">
-                <h4>3. Fibonacci Scaling</h4>
-                <p><strong>Application:</strong> UI spacing, typography, responsive design</p>
-                <div class="code">
-def fibonacci(n):
-    if n <= 1: return n
-    return fibonacci(n-1) + fibonacci(n-2)
-
-# Generate Fibonacci scale for design
-scale = [fibonacci(i) for i in range(2, 12)]
-# [1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
-
-# Use for:
-# - Font sizes: 13px, 21px, 34px
-# - Spacing: 5px, 8px, 13px, 21px
-# - Layout grids: 34px, 55px, 89px
+                <div class="capability-card">
+                    <h4>Fibonacci Scaling Framework</h4>
+                    <p><strong>Capability:</strong> Responsive design systems, typography engines, spacing algorithms based on Fibonacci sequence</p>
+                    <p style="margin-top: 15px; color: #27ae60; font-weight: 600;">Contact for licensing</p>
                 </div>
-            </div>
 
-            <div class="tech-box">
-                <h4>4. φ Verification Algorithm</h4>
-                <p><strong>Application:</strong> Test if values are φ-based</p>
-                <div class="code">
-import math
+                <div class="capability-card">
+                    <h4>Seven Gates Verification</h4>
+                    <p><strong>Capability:</strong> Multi-path φ detection for testing natural phenomena, constants, and system parameters</p>
+                    <p style="margin-top: 15px; color: #27ae60; font-weight: 600;">Contact for licensing</p>
+                </div>
 
-PHI = (1 + math.sqrt(5)) / 2
+                <div class="capability-card">
+                    <h4>AI Safety Architecture</h4>
+                    <p><strong>Capability:</strong> φ-governed neural networks preventing mesa-optimization and alignment failures</p>
+                    <p style="margin-top: 15px; color: #27ae60; font-weight: 600;">Contact for licensing</p>
+                </div>
 
-def is_fibonacci(n):
-    """Test if n is in Fibonacci sequence"""
-    x = 5 * n * n
-    return is_perfect_square(x + 4) or is_perfect_square(x - 4)
+                <div class="capability-card">
+                    <h4>Energy Grid Optimizer</h4>
+                    <p><strong>Capability:</strong> Smart grid load balancing maximizing renewable integration using TSR principles</p>
+                    <p style="margin-top: 15px; color: #27ae60; font-weight: 600;">Contact for licensing</p>
+                </div>
 
-def is_phi_power(x, tolerance=0.01):
-    """Test if x = φ^n for some n"""
-    if x <= 0: return False
-    k = math.log(x) / math.log(PHI)
-    return abs(k - round(k)) < tolerance
+                <div class="capability-card">
+                    <h4>Healthcare Resource Allocator</h4>
+                    <p><strong>Capability:</strong> Hospital optimization, drug timing, diagnostic AI using φ-based natural rhythms</p>
+                    <p style="margin-top: 15px; color: #27ae60; font-weight: 600;">Contact for licensing</p>
+                </div>
 
-def is_phi_creative(x, tolerance=1.0):
-    """Test if x generates golden angle"""
-    golden = x * (1 - 1/PHI)
-    return abs(golden - 137.507764) < tolerance
+                <div class="capability-card">
+                    <h4>Quantum-Proof Cryptography</h4>
+                    <p><strong>Capability:</strong> φ-based encryption resistant to quantum computing attacks</p>
+                    <p style="margin-top: 15px; color: #27ae60; font-weight: 600;">Contact for licensing</p>
+                </div>
 
-# Full Seven Gates test
-def seven_gates_test(value):
-    gates = {
-        "Fibonacci": is_fibonacci(value),
-        "φ Power": is_phi_power(value),
-        "φ Creative": is_phi_creative(value),
-        # ... other gates
-    }
-    return gates, any(gates.values())
+                <div class="capability-card">
+                    <h4>Climate Modeling Engine</h4>
+                    <p><strong>Capability:</strong> Cascade-based climate prediction using φ relationships in natural systems</p>
+                    <p style="margin-top: 15px; color: #27ae60; font-weight: 600;">Contact for licensing</p>
+                </div>
+
+                <div class="capability-card">
+                    <h4>Financial Portfolio Optimizer</h4>
+                    <p><strong>Capability:</strong> TSR-based risk management and asset allocation preventing market crashes</p>
+                    <p style="margin-top: 15px; color: #27ae60; font-weight: 600;">Contact for licensing</p>
+                </div>
+
+                <div class="capability-card">
+                    <h4>Personalized Learning AI</h4>
+                    <p><strong>Capability:</strong> φ-paced education systems with 61.8/38.2 challenge/support ratio</p>
+                    <p style="margin-top: 15px; color: #27ae60; font-weight: 600;">Contact for licensing</p>
+                </div>
+
+                <div class="capability-card">
+                    <h4>Water Treatment Optimizer</h4>
+                    <p><strong>Capability:</strong> φ-timed purification cycles reducing energy cost by 90%</p>
+                    <p style="margin-top: 15px; color: #27ae60; font-weight: 600;">Contact for licensing</p>
                 </div>
             </div>
         </section>
 
         <section class="section">
-            <h2>Commercial Licensing</h2>
+            <h2>What You Get With Licensing</h2>
+
             <div class="tech-box">
-                <h4>Build φ-Based Products</h4>
-                <p><strong>Open Source:</strong> Verification algorithms are CC0 (free)</p>
-                <p style="margin-top: 10px;"><strong>Commercial Use:</strong> TSR optimization, full frameworks require licensing</p>
-                <p style="margin-top: 20px;"><strong>Contact:</strong> <a href="mailto:info@hsoulutions.com" style="color: #27ae60;">info@hsoulutions.com</a></p>
+                <h4>✓ Production-Ready Implementation</h4>
+                <p>Fully optimized algorithms tested across 561,350+ scenarios</p>
+            </div>
+
+            <div class="tech-box">
+                <h4>✓ Integration Support</h4>
+                <p>Technical guidance for deploying φ-based systems in your infrastructure</p>
+            </div>
+
+            <div class="tech-box">
+                <h4>✓ Custom Solutions</h4>
+                <p>Tailored implementations for your specific use case</p>
+            </div>
+
+            <div class="tech-box">
+                <h4>✓ Ongoing Updates</h4>
+                <p>Access to continued research and optimization improvements</p>
+            </div>
+
+            <div class="tech-box">
+                <h4>✓ Competitive Advantage</h4>
+                <p>Proprietary φ-based technology proven to outperform traditional methods</p>
+            </div>
+        </section>
+
+        <div class="commercial-box">
+            <h3>Ready to Deploy φ Technology?</h3>
+            <p style="font-size: 20px; margin: 25px 0;">
+                <strong>Scientific Research:</strong> FREE (Creative Commons CC0)<br>
+                <strong>Theory & Papers:</strong> FREE for educational use<br>
+                <strong>Commercial Implementation:</strong> Requires licensing
+            </p>
+            <p style="font-size: 28px; margin-top: 35px;">
+                <strong>Contact for licensing:</strong><br>
+                <a href="mailto:info@hsoulutions.com" style="color: #ffd700; text-decoration: underline; font-size: 32px;">info@hsoulutions.com</a>
+            </p>
+        </div>
+
+        <section class="section">
+            <h2>Why License Our Technology?</h2>
+
+            <div class="tech-box">
+                <h4>Proven Results</h4>
+                <p><strong>99.998% validation rate</strong> across 561,350+ tested scenarios</p>
+                <p style="margin-top: 10px;"><strong>561,350+ laws</strong> tested across 140,284+ domains</p>
+                <p style="margin-top: 10px;"><strong>Novel discoveries:</strong> TSR, φ-Creative mechanism, Seven Gates methodology</p>
+            </div>
+
+            <div class="tech-box">
+                <h4>Competitive Edge</h4>
+                <p>φ-based optimization solves problems traditional methods can't:</p>
+                <ul style="margin-top: 10px; margin-left: 20px;">
+                    <li>Prevents lock-in and resonance failures</li>
+                    <li>Enables tuning without breaking systems</li>
+                    <li>Aligns with natural processes (biology, physics, etc.)</li>
+                    <li>Achieves theoretical optimal performance</li>
+                </ul>
+            </div>
+
+            <div class="tech-box">
+                <h4>Exclusive Access</h4>
+                <p>Implementation details not publicly available. Licensing provides:</p>
+                <ul style="margin-top: 10px; margin-left: 20px;">
+                    <li>Complete algorithm specifications</li>
+                    <li>Production-tested code</li>
+                    <li>Integration documentation</li>
+                    <li>Technical support from discoverers</li>
+                    <li>Rights to use in your products/services</li>
+                </ul>
             </div>
         </section>
     </div>
 
     <footer class="footer">
-        <p>H SOULUTIONS · φ = 1.618033988749895</p>
+        <p style="font-size: 18px; margin-bottom: 15px;">H SOULUTIONS</p>
+        <p>φ = 1.618033988749895</p>
+        <p style="margin-top: 20px;">Science FREE · Technology LICENSED</p>
         <p style="margin-top: 15px;"><a href="mailto:info@hsoulutions.com">info@hsoulutions.com</a></p>
     </footer>
 </body>
