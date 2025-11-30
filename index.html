@@ -90,14 +90,14 @@
             <p class="text-xl md:text-2xl mb-12 max-w-3xl mx-auto text-gray-400">
                 Reality's Operating System Discovered Through America's Geographic Extremes
             </p>
-            <button class="phi-button px-8 py-4 rounded-full text-black font-semibold text-lg">
+            <button onclick="document.getElementById('journey').scrollIntoView({behavior: 'smooth'})" class="phi-button px-8 py-4 rounded-full text-black font-semibold text-lg">
                 DISCOVER THE PATTERN
             </button>
         </div>
     </section>
 
     <!-- Journey Section -->
-    <section class="py-20 px-4">
+    <section id="journey" class="py-20 px-4">
         <div class="max-w-6xl mx-auto">
             <h2 class="text-4xl md:text-5xl font-bold text-center mb-16">
                 FROM PENNSYLVANIA FORESTS TO ALASKA WILDERNESS
@@ -284,28 +284,28 @@
                     <div class="text-3xl mb-4">📄</div>
                     <h3 class="font-semibold mb-2">Scientific Papers</h3>
                     <p class="text-sm text-gray-400 mb-4">Complete mathematical framework</p>
-                    <button class="text-yellow-400 hover:text-yellow-300">Download PDF</button>
+                    <button onclick="downloadPaper()" class="text-yellow-400 hover:text-yellow-300">Download PDF</button>
                 </div>
                 
                 <div class="glass-card p-6 rounded-xl text-center">
                     <div class="text-3xl mb-4">🔧</div>
                     <h3 class="font-semibold mb-2">Verification Kit</h3>
                     <p class="text-sm text-gray-400 mb-4">Test any phenomenon</p>
-                    <button class="text-yellow-400 hover:text-yellow-300">Get Code</button>
+                    <button onclick="getVerificationKit()" class="text-yellow-400 hover:text-yellow-300">Get Code</button>
                 </div>
                 
                 <div class="glass-card p-6 rounded-xl text-center">
                     <div class="text-3xl mb-4">🎓</div>
                     <h3 class="font-semibold mb-2">Teaching Guide</h3>
                     <p class="text-sm text-gray-400 mb-4">Classroom activities</p>
-                    <button class="text-yellow-400 hover:text-yellow-300">Download</button>
+                    <button onclick="downloadTeachingGuide()" class="text-yellow-400 hover:text-yellow-300">Download</button>
                 </div>
                 
                 <div class="glass-card p-6 rounded-xl text-center">
                     <div class="text-3xl mb-4">📰</div>
                     <h3 class="font-semibold mb-2">Press Kit</h3>
                     <p class="text-sm text-gray-400 mb-4">Media resources</p>
-                    <button class="text-yellow-400 hover:text-yellow-300">Access</button>
+                    <button onclick="accessPressKit()" class="text-yellow-400 hover:text-yellow-300">Access</button>
                 </div>
             </div>
         </div>
@@ -386,11 +386,21 @@
 
         // Verification function
         function testPhenomenon() {
-            const phenomenon = document.getElementById('phenomenon').value;
-            const category = document.getElementById('category').value;
+            console.log('testPhenomenon called');
+            
+            const phenomenon = document.getElementById('phenomenon');
+            const category = document.getElementById('category');
             const results = document.getElementById('results');
             const mechanismResults = document.getElementById('mechanism-results');
             const conclusion = document.getElementById('conclusion');
+            
+            if (!phenomenon || !category || !results || !mechanismResults || !conclusion) {
+                console.error('Missing elements');
+                alert('Error: Could not find form elements');
+                return;
+            }
+            
+            console.log('Testing phenomenon:', phenomenon.value, 'Category:', category.value);
             
             // Simulate verification (in real implementation, this would call the actual verification algorithm)
             const mechanisms = [
@@ -418,6 +428,23 @@
             
             // Scroll to results
             results.scrollIntoView({ behavior: 'smooth' });
+        }
+        
+        // Add download functions for resource buttons
+        function downloadPaper() {
+            alert('Scientific paper download will be available soon. Contact ogh@hsoulutions.com for advance access.');
+        }
+        
+        function getVerificationKit() {
+            alert('Verification kit coming soon. Contact ogh@hsoulutions.com for collaboration opportunities.');
+        }
+        
+        function downloadTeachingGuide() {
+            alert('Teaching guide in development. Contact ogh@hsoulutions.com for educational partnerships.');
+        }
+        
+        function accessPressKit() {
+            alert('Press kit available upon request. Contact ogh@hsoulutions.com for media resources.');
         }
 
         // Initialize

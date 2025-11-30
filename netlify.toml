@@ -6,10 +6,5 @@
   to = "/index.html"
   status = 200
 
-[[redirects]]
-  from = "/.netlify/*"
-  to = "/index.html"
-  status = 404
-
 [build.environment]
   NODE_VERSION = "18"
