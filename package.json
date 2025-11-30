@@ -1,0 +1,43 @@
+{
+  "name": "hsoulutions-neon-integration",
+  "version": "1.0.0",
+  "description": "H SOULUTIONS + Neon Database Integration - Liv's Law Scientific Platform",
+  "main": "neon-integrated-platform.html",
+  "type": "module",
+  "scripts": {
+    "start": "python -m http.server 3000",
+    "dev": "python -m http.server 8080",
+    "build": "echo 'Build complete - static files ready'",
+    "deploy": "netlify deploy --prod",
+    "test": "node test-neon-integration.js",
+    "init-db": "node scripts/init-database.js",
+    "sync-data": "node scripts/sync-data.js"
+  },
+  "dependencies": {
+    "@neondatabase/serverless": "^0.9.0",
+    "ws": "^8.14.0",
+    "dotenv": "^16.3.1"
+  },
+  "devDependencies": {
+    "netlify-cli": "^16.0.0"
+  },
+  "keywords": [
+    "livs-law",
+    "golden-ratio",
+    "neon-database",
+    "postgresql",
+    "scientific-platform",
+    "phi",
+    "cyberpunk",
+    "oghs-consciousness"
+  ],
+  "author": "H SOULUTIONS",
+  "license": "Commercial",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hsoulutions/neon-integration"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
