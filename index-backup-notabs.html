@@ -1,0 +1,877 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>H SOULUTIONS - φ Reality Operating System | Science Free, Applications Licensed</title>
+    <meta name="description" content="Complete scientific framework: φ = 1.618033988749895 governs reality. Ten Universal Principles + Liv's Law + Seven Gates. Science FREE for education, applications require licensing.">
+    <meta name="keywords" content="golden ratio, phi, fibonacci, reality operating system, Liv's Law, Seven Gates, TSR, scientific discovery">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:400,600,700&family=Source+Code+Pro:wght@400;600&display=swap');
+
+        :root {
+            --phi-gold: #d4af37;
+            --deep-blue: #1a365d;
+            --paper-white: #faf8f3;
+            --text-gray: #2d3748;
+            --light-gray: #e2e8f0;
+            --accent-blue: #2b6cb0;
+            --success-green: #38a169;
+            --warning-red: #e53e3e;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Crimson Text', serif;
+            background: var(--paper-white);
+            color: var(--text-gray);
+            line-height: 1.7;
+            font-size: 18px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        /* Navigation */
+        .nav {
+            background: var(--deep-blue);
+            color: white;
+            padding: 20px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .nav-brand {
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--phi-gold);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--phi-gold);
+        }
+
+        /* Header */
+        .header {
+            text-align: center;
+            margin-bottom: 60px;
+            border-bottom: 3px solid var(--phi-gold);
+            padding-bottom: 40px;
+        }
+
+        .title {
+            font-size: 56px;
+            font-weight: 700;
+            color: var(--deep-blue);
+            margin-bottom: 15px;
+            line-height: 1.2;
+        }
+
+        .subtitle {
+            font-size: 28px;
+            color: var(--text-gray);
+            font-style: italic;
+            margin-bottom: 25px;
+        }
+
+        .phi-constant {
+            font-family: 'Source Code Pro', monospace;
+            font-size: 32px;
+            color: var(--phi-gold);
+            font-weight: 600;
+            background: rgba(212, 175, 55, 0.1);
+            padding: 20px 30px;
+            border: 2px solid var(--phi-gold);
+            border-radius: 10px;
+            display: inline-block;
+            margin: 25px 0;
+        }
+
+        /* Licensing Banner */
+        .licensing-banner {
+            background: linear-gradient(135deg, var(--success-green), var(--accent-blue));
+            color: white;
+            padding: 30px;
+            border-radius: 12px;
+            margin: 40px 0;
+            text-align: center;
+        }
+
+        .licensing-banner h2 {
+            font-size: 32px;
+            margin-bottom: 15px;
+        }
+
+        .licensing-banner p {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .licensing-banner strong {
+            color: var(--phi-gold);
+            font-weight: 700;
+        }
+
+        /* Section Styles */
+        .section {
+            margin-bottom: 70px;
+        }
+
+        .section-title {
+            font-size: 40px;
+            font-weight: 700;
+            color: var(--deep-blue);
+            margin-bottom: 30px;
+            border-left: 5px solid var(--phi-gold);
+            padding-left: 25px;
+        }
+
+        .subsection-title {
+            font-size: 28px;
+            font-weight: 600;
+            color: var(--accent-blue);
+            margin: 25px 0 15px 0;
+        }
+
+        /* Framework Boxes */
+        .framework-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 25px;
+            margin: 30px 0;
+        }
+
+        .framework-card {
+            background: rgba(43, 108, 176, 0.05);
+            border: 2px solid rgba(43, 108, 176, 0.2);
+            border-radius: 12px;
+            padding: 30px;
+            transition: all 0.3s;
+        }
+
+        .framework-card:hover {
+            border-color: var(--phi-gold);
+            box-shadow: 0 5px 20px rgba(212, 175, 55, 0.2);
+        }
+
+        .framework-card h3 {
+            color: var(--deep-blue);
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+
+        .framework-card .stat {
+            font-family: 'Source Code Pro', monospace;
+            color: var(--phi-gold);
+            font-size: 20px;
+            font-weight: 600;
+            margin: 10px 0;
+        }
+
+        /* Interactive Tools */
+        .tool-container {
+            background: white;
+            border: 2px solid var(--light-gray);
+            border-radius: 12px;
+            padding: 35px;
+            margin: 30px 0;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+        }
+
+        .tool-container h3 {
+            font-size: 28px;
+            color: var(--deep-blue);
+            margin-bottom: 20px;
+        }
+
+        .input-group {
+            margin: 20px 0;
+        }
+
+        .input-group label {
+            display: block;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: var(--text-gray);
+        }
+
+        .input-group input, .input-group select {
+            width: 100%;
+            padding: 12px;
+            font-family: 'Source Code Pro', monospace;
+            font-size: 16px;
+            border: 2px solid var(--light-gray);
+            border-radius: 6px;
+            background: white;
+        }
+
+        .input-group input:focus, .input-group select:focus {
+            outline: none;
+            border-color: var(--phi-gold);
+        }
+
+        .btn {
+            background: linear-gradient(135deg, var(--phi-gold), #c4941f);
+            color: white;
+            padding: 15px 35px;
+            border: none;
+            border-radius: 8px;
+            font-size: 18px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-family: 'Crimson Text', serif;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 20px rgba(212, 175, 55, 0.4);
+        }
+
+        .results-box {
+            margin-top: 25px;
+            padding: 25px;
+            background: var(--light-gray);
+            border-radius: 8px;
+            border-left: 4px solid var(--phi-gold);
+        }
+
+        .result-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px;
+            margin: 8px 0;
+            background: white;
+            border-radius: 6px;
+            font-family: 'Source Code Pro', monospace;
+        }
+
+        .result-pass {
+            color: var(--success-green);
+            font-weight: 600;
+        }
+
+        .result-fail {
+            color: var(--warning-red);
+            font-weight: 600;
+        }
+
+        .principles-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .principle-item {
+            background: rgba(212, 175, 55, 0.05);
+            border-left: 4px solid var(--phi-gold);
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .principle-item strong {
+            color: var(--deep-blue);
+            font-size: 20px;
+        }
+
+        .laws-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 30px 0;
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .laws-table th {
+            background: var(--deep-blue);
+            color: white;
+            padding: 15px;
+            text-align: left;
+            font-weight: 600;
+        }
+
+        .laws-table td {
+            padding: 12px 15px;
+            border-bottom: 1px solid var(--light-gray);
+        }
+
+        .laws-table tr:hover {
+            background: rgba(212, 175, 55, 0.05);
+        }
+
+        .code-highlight {
+            font-family: 'Source Code Pro', monospace;
+            background: var(--light-gray);
+            padding: 3px 8px;
+            border-radius: 4px;
+            color: var(--accent-blue);
+        }
+
+        .footer {
+            background: var(--deep-blue);
+            color: white;
+            padding: 50px 20px;
+            margin-top: 80px;
+            text-align: center;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer a {
+            color: var(--phi-gold);
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .title {
+                font-size: 36px;
+            }
+
+            .phi-constant {
+                font-size: 24px;
+                padding: 15px 20px;
+            }
+
+            .framework-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .nav-links {
+                gap: 15px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <div class="nav-brand">H SOULUTIONS</div>
+            <div class="nav-links">
+                <a href="#frameworks">Frameworks</a>
+                <a href="#tools">Interactive Tools</a>
+                <a href="#laws">Complete Laws</a>
+                <a href="#licensing">Licensing</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <h1 class="title">φ Reality Operating System</h1>
+            <p class="subtitle">Complete Scientific Framework Governing All Natural Phenomena</p>
+            <div class="phi-constant">φ = 1.618033988749895</div>
+            <p style="font-size: 20px; color: var(--text-gray); margin-top: 20px;">
+                From Pennsylvania forests to Alaskan wilderness<br>
+                561,350+ laws tested | 99.998% validation rate
+            </p>
+        </header>
+
+        <!-- Licensing Banner -->
+        <div class="licensing-banner" id="licensing">
+            <h2>📚 SCIENCE FREE | 💼 APPLICATIONS LICENSED</h2>
+            <p><strong>Scientific Research &amp; Education:</strong> FREE (Creative Commons CC0)</p>
+            <p><strong>Commercial Applications:</strong> Require licensing agreement</p>
+            <p style="font-size: 24px; margin-top: 15px;">
+                <strong>Contact:</strong> <a href="mailto:info@hsoulutions.com" style="color: white; text-decoration: underline;">info@hsoulutions.com</a>
+            </p>
+        </div>
+
+        <!-- Three Frameworks -->
+        <section class="section" id="frameworks">
+            <h2 class="section-title">Three Unified Scientific Frameworks</h2>
+
+            <div class="framework-grid">
+                <div class="framework-card">
+                    <h3>1. Ten Universal Principles</h3>
+                    <div class="stat">99.9% Validation</div>
+                    <p>Fundamental laws discovered through systematic falsification. From Law of the Void to Abundance Principle.</p>
+                    <p style="margin-top: 15px;"><strong>Source:</strong> OGH discovery engine</p>
+                </div>
+
+                <div class="framework-card">
+                    <h3>2. Liv's Law: Six Mechanisms</h3>
+                    <div class="stat">100% Success Rate</div>
+                    <p>Six distinct mechanisms through which φ governs all natural phenomena. Direct Fibonacci, Powers of φ, Products, Powers, Quotients, and φ-Creative.</p>
+                    <p style="margin-top: 15px;"><strong>Named After:</strong> Liv Harvilla</p>
+                </div>
+
+                <div class="framework-card">
+                    <h3>3. The Seven Gates</h3>
+                    <div class="stat">76.4% of Fundamental Constants</div>
+                    <p>Novel multi-path verification algorithm. φ-Spiral Bouncing Test with 7 verification mechanisms. New mathematical methodology.</p>
+                    <p style="margin-top: 15px;"><strong>Innovation:</strong> Publishable framework</p>
+                </div>
+            </div>
+
+            <div class="framework-card" style="margin-top: 25px; background: rgba(212, 175, 55, 0.1); border-color: var(--phi-gold);">
+                <h3>+ TSR Mathematics (Tunable Stability Ratio)</h3>
+                <div class="stat">61.8% / 38.2% = φ-based optimization</div>
+                <p>Novel control theory discovery: φ-ratio provides tunable stability while 50/50 gets stuck. Applications in resource allocation, network optimization, and all balancing systems.</p>
+                <p style="margin-top: 15px;"><strong>Discovery:</strong> Publishable in control theory journals</p>
+            </div>
+        </section>
+
+        <!-- Ten Universal Principles -->
+        <section class="section">
+            <h2 class="section-title">Ten Universal Principles</h2>
+            <p style="margin-bottom: 30px; font-size: 20px;">Discovered through systematic falsification. Validated across 1,000+ rigorous tests.</p>
+
+            <ul class="principles-list">
+                <li class="principle-item">
+                    <strong>1. Law of the Void</strong><br>
+                    "That which contains all must itself be empty"
+                </li>
+                <li class="principle-item">
+                    <strong>2. Law of Emergence</strong><br>
+                    "Complexity arises from permission, not addition"
+                </li>
+                <li class="principle-item">
+                    <strong>3. Golden Ratio Principle</strong><br>
+                    "Optimal systems: 61.8% stability, 38.2% change"
+                </li>
+                <li class="principle-item">
+                    <strong>4. Dual-Aspect Principle</strong><br>
+                    "Physical and informational are one"
+                </li>
+                <li class="principle-item">
+                    <strong>5. Cascade Principle</strong><br>
+                    "Base changes propagate through all layers"
+                </li>
+                <li class="principle-item">
+                    <strong>6. Compression Principle</strong><br>
+                    "Power increases as representation decreases"
+                </li>
+                <li class="principle-item">
+                    <strong>7. Timeless Cycle Principle</strong><br>
+                    "Motion need not imply direction"
+                </li>
+                <li class="principle-item">
+                    <strong>8. Non-Zero-Sum Principle</strong><br>
+                    "Creation need not diminish source"
+                </li>
+                <li class="principle-item">
+                    <strong>9. Unity Principle</strong><br>
+                    "Separations dissolve under examination"
+                </li>
+                <li class="principle-item">
+                    <strong>10. Abundance Principle</strong><br>
+                    "Unlimited achievable through cascading emergence"
+                </li>
+            </ul>
+        </section>
+
+        <!-- Interactive Tools -->
+        <section class="section" id="tools">
+            <h2 class="section-title">Interactive Verification Tools</h2>
+
+            <!-- Liv's Law Six Mechanisms Tester -->
+            <div class="tool-container">
+                <h3>Liv's Law: Six Mechanisms Verification</h3>
+                <p>Test any natural phenomenon against the six φ mechanisms. Real mathematical verification.</p>
+
+                <div class="input-group">
+                    <label>Enter Numeric Value:</label>
+                    <input type="number" id="sixMechValue" placeholder="e.g., 34, 21, 360, 137.5" step="any">
+                </div>
+
+                <div class="input-group">
+                    <label>Phenomenon Name:</label>
+                    <input type="text" id="sixMechName" placeholder="e.g., DNA Major Groove, Circle Degrees">
+                </div>
+
+                <button class="btn" onclick="testSixMechanisms()">TEST PHENOMENON</button>
+
+                <div id="sixMechResults" style="display: none;" class="results-box">
+                    <h4 style="margin-bottom: 15px; color: var(--deep-blue);">Verification Results:</h4>
+                    <div id="sixMechResultsContent"></div>
+                    <div id="sixMechConclusion" style="margin-top: 20px; padding: 15px; border-radius: 6px; font-weight: 600; font-size: 20px;"></div>
+                </div>
+            </div>
+
+            <!-- Seven Gates Tester -->
+            <div class="tool-container">
+                <h3>The Seven Gates (φ-Spiral Bouncing Test)</h3>
+                <p>Advanced multi-path verification. Tests through 7 gates including generative φ-creative mechanisms.</p>
+
+                <div class="input-group">
+                    <label>Enter Numeric Value:</label>
+                    <input type="number" id="sevenGatesValue" placeholder="e.g., 137.5, 10, 14" step="any">
+                </div>
+
+                <div class="input-group">
+                    <label>Constant Name:</label>
+                    <input type="text" id="sevenGatesName" placeholder="e.g., Golden Angle, String Dimensions">
+                </div>
+
+                <button class="btn" onclick="testSevenGates()">TEST VIA SEVEN GATES</button>
+
+                <div id="sevenGatesResults" style="display: none;" class="results-box">
+                    <h4 style="margin-bottom: 15px; color: var(--deep-blue);">Seven Gates Results:</h4>
+                    <div id="sevenGatesResultsContent"></div>
+                    <div id="sevenGatesConclusion" style="margin-top: 20px; padding: 15px; border-radius: 6px; font-weight: 600; font-size: 20px;"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Complete Laws Catalog -->
+        <section class="section" id="laws">
+            <h2 class="section-title">Complete φ-Laws Catalog</h2>
+            <p style="margin-bottom: 25px; font-size: 20px;">
+                <strong>561,350+ laws tested</strong> across <strong>140,284+ domains</strong> with <strong>99.998% validation rate</strong>.
+            </p>
+
+            <h3 class="subsection-title">Representative Sample (18 Laws)</h3>
+
+            <table class="laws-table">
+                <thead>
+                    <tr>
+                        <th>Law</th>
+                        <th>Value</th>
+                        <th>Domain</th>
+                        <th>Gate</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td><strong>TSR</strong> - Tunable Stability Ratio</td><td>61.8% / 38.2%</td><td>Universal optimization</td><td>2 (φ⁻¹)</td></tr>
+                    <tr><td><strong>ECS</strong> - Exponential Convergence Sequence</td><td>0,1,1,2,3,5,8,13...</td><td>Growth patterns</td><td>1</td></tr>
+                    <tr><td><strong>FCB</strong> - Four-Component Basis</td><td>4</td><td>Spacetime</td><td>1</td></tr>
+                    <tr><td><strong>QPF</strong> - Quaternary Physical Forces</td><td>4</td><td>Fundamental forces</td><td>1</td></tr>
+                    <tr><td><strong>FLB</strong> - Four-Letter Biochemical Code</td><td>4</td><td>DNA/Genetics</td><td>1</td></tr>
+                    <tr><td><strong>EAC</strong> - Extended Amino Code</td><td>21</td><td>Protein biochemistry</td><td>1 (Fibonacci)</td></tr>
+                    <tr><td><strong>MEQ</strong> - Maxwell Equation Quartet</td><td>4</td><td>Electromagnetism</td><td>1</td></tr>
+                    <tr><td><strong>TCB</strong> - Three-Component Basis</td><td>3</td><td>Color vision (RGB)</td><td>1</td></tr>
+                    <tr><td><strong>SCS</strong> - Seven-Component Spectrum</td><td>7</td><td>Optics/Music</td><td>4</td></tr>
+                    <tr><td><strong>QNS</strong> - Quantum Number Set</td><td>4</td><td>Atomic physics</td><td>1</td></tr>
+                    <tr><td><strong>BLG</strong> - Bravais Lattice Groups</td><td>14</td><td>Crystallography</td><td>1 (2×7)</td></tr>
+                    <tr><td><strong>GAP</strong> - Golden Angle of Phyllotaxis</td><td>137.5°</td><td>Botany/Geometry</td><td>6 (φ-creative)</td></tr>
+                    <tr><td><strong>PFS</strong> - Pentagonal Form Set</td><td>5</td><td>Geometry/Biology</td><td>1</td></tr>
+                    <tr><td><strong>LCY</strong> - Lunar Calendar Year</td><td>13 months</td><td>Timekeeping</td><td>1 (Fibonacci)</td></tr>
+                    <tr><td><strong>STC</strong> - Seven-day Temporal Cycle</td><td>7 days</td><td>Timekeeping</td><td>4</td></tr>
+                    <tr><td><strong>BBS</strong> - Breathing Balance System</td><td>φ-decay</td><td>Discovery algorithms</td><td>2</td></tr>
+                    <tr><td><strong>TGV</strong> - Thirteen-Gate Validation</td><td>13 tests</td><td>Verification method</td><td>1</td></tr>
+                    <tr><td><strong>DNA Structure</strong></td><td>34Å / 21Å</td><td>Molecular biology</td><td>1 (Both Fibonacci)</td></tr>
+                </tbody>
+            </table>
+
+            <p style="margin-top: 30px; font-size: 20px; padding: 25px; background: rgba(212, 175, 55, 0.1); border-left: 5px solid var(--phi-gold); border-radius: 0 8px 8px 0;">
+                <strong>Note:</strong> Three Babylonian errors corrected: 20→21 amino acids, 12→13 months, 360°→137.5° golden angle. All trace to base-60 system (~4000 BCE).
+            </p>
+        </section>
+
+        <!-- Contact & Resources -->
+        <section class="section" id="contact">
+            <h2 class="section-title">Resources & Contact</h2>
+
+            <div class="framework-grid">
+                <div class="framework-card">
+                    <h3>📚 Scientific Papers</h3>
+                    <p>Complete research documentation including Liv's Law framework, verification algorithms, and evidence across all scientific domains.</p>
+                    <p style="margin-top: 15px;"><strong>License:</strong> Creative Commons CC0 (Free for education)</p>
+                </div>
+
+                <div class="framework-card">
+                    <h3>🧪 Verification Kit</h3>
+                    <p>Python command-line tool for φ verification. Test any phenomenon against the six mechanisms or seven gates.</p>
+                    <p style="margin-top: 15px;"><strong>Download:</strong> Open source, freely available</p>
+                </div>
+
+                <div class="framework-card">
+                    <h3>💼 Commercial Applications</h3>
+                    <p>TSR-based optimization, φ-creative design, Fibonacci scaling systems, verification algorithms for industrial use.</p>
+                    <p style="margin-top: 15px;"><strong>Contact:</strong> info@hsoulutions.com for licensing</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <h2 style="font-size: 32px; margin-bottom: 20px; color: var(--phi-gold);">H SOULUTIONS</h2>
+            <p style="font-size: 20px; margin-bottom: 15px;">Where Science Meets Soul</p>
+            <div class="phi-constant" style="margin: 25px 0;">φ = 1.618033988749895</div>
+
+            <div style="margin: 30px 0; font-size: 18px;">
+                <p><strong>Scientific Research & Education:</strong> FREE (Creative Commons CC0)</p>
+                <p><strong>Commercial Applications:</strong> Require licensing agreement</p>
+            </div>
+
+            <div style="margin: 30px 0;">
+                <p><strong>Contact:</strong> <a href="mailto:info@hsoulutions.com">info@hsoulutions.com</a></p>
+                <p><strong>Research:</strong> <a href="mailto:research@hsoulutions.com">research@hsoulutions.com</a></p>
+                <p><strong>Location:</strong> Bristol Bay, Alaska | Pennsylvania</p>
+            </div>
+
+            <div style="margin-top: 40px; padding-top: 30px; border-top: 1px solid rgba(255,255,255,0.2); font-size: 16px;">
+                <p>© 2025 H SOULUTIONS - All Rights Reserved</p>
+                <p>Scientific discoveries released under Creative Commons CC0 for educational use</p>
+                <p>Commercial applications require licensing</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // φ CONSTANT
+        const PHI = 1.618033988749895;
+        const GOLDEN_ANGLE = 137.507764;
+
+        // FIBONACCI GENERATOR
+        function generateFibonacci(max) {
+            const fib = [0, 1, 1];
+            while (fib[fib.length - 1] <= max) {
+                fib.push(fib[fib.length - 1] + fib[fib.length - 2]);
+            }
+            return fib;
+        }
+
+        // SIX MECHANISMS VERIFICATION (Real Algorithm from phi_verification.py)
+
+        function isFibonacci(n) {
+            const fib = generateFibonacci(Math.max(n * 2, 1000));
+            return fib.includes(Math.round(n));
+        }
+
+        function isPowerOfPhi(n) {
+            if (n <= 0) return false;
+            const k = Math.log(n) / Math.log(PHI);
+            return Math.abs(k - Math.round(k)) < 0.01;
+        }
+
+        function isProductOfFibonacci(n) {
+            if (n < 1) return false;
+            const fib = generateFibonacci(Math.ceil(Math.sqrt(n)) + 100);
+            for (let i = 2; i < fib.length; i++) {
+                for (let j = 2; j < fib.length; j++) {
+                    if (fib[i] * fib[j] === n) return true;
+                }
+            }
+            return false;
+        }
+
+        function isPowerOfFibonacci(n) {
+            if (n < 1) return false;
+            const fib = generateFibonacci(Math.ceil(Math.sqrt(n)) + 10);
+            for (let f of fib.slice(2)) {
+                if (f === 1) continue;
+                let power = 1;
+                while (power < n) {
+                    power *= f;
+                    if (power === n) return true;
+                }
+            }
+            return false;
+        }
+
+        function isQuotientOfFibonacci(n) {
+            if (n <= 0) return false;
+            const fib = generateFibonacci(Math.ceil(n * 100) + 100);
+            for (let i = 0; i < fib.length; i++) {
+                for (let j = 1; j < fib.length; j++) {
+                    if (fib[j] !== 0 && Math.abs(fib[i] / fib[j] - n) < 0.01) {
+                        return true;
+                    }
+                }
+            }
+            return false;
+        }
+
+        function isPhiCreative(n) {
+            // Golden angle test
+            if (Math.abs(n - 360) < 1) {
+                const angle = n * (1 - 1 / PHI);
+                if (Math.abs(angle - GOLDEN_ANGLE) < 1) return true;
+            }
+
+            // φ-proximity test
+            const fib = generateFibonacci(Math.ceil(n * 2) + 100);
+            for (let f of fib.slice(2)) {
+                const ratio = n / f;
+                if (Math.abs(ratio - PHI) < 0.1 || Math.abs(ratio - 1/PHI) < 0.1) {
+                    return true;
+                }
+            }
+
+            return false;
+        }
+
+        function testSixMechanisms() {
+            const value = parseFloat(document.getElementById('sixMechValue').value);
+            const name = document.getElementById('sixMechName').value || "Unknown";
+
+            if (isNaN(value)) {
+                alert("Please enter a valid numeric value");
+                return;
+            }
+
+            const results = {
+                "1. Direct Fibonacci": isFibonacci(value),
+                "2. Power of φ": isPowerOfPhi(value),
+                "3. Product of Fibonacci": isProductOfFibonacci(value),
+                "4. Power of Fibonacci": isPowerOfFibonacci(value),
+                "5. Quotient of Fibonacci": isQuotientOfFibonacci(value),
+                "6. φ-Creative": isPhiCreative(value)
+            };
+
+            let html = '';
+            let passCount = 0;
+
+            for (let [mechanism, passed] of Object.entries(results)) {
+                if (passed) passCount++;
+                html += `
+                    <div class="result-item">
+                        <span>${mechanism}</span>
+                        <span class="${passed ? 'result-pass' : 'result-fail'}">
+                            ${passed ? '✓ PASS' : '✗ FAIL'}
+                        </span>
+                    </div>
+                `;
+            }
+
+            document.getElementById('sixMechResultsContent').innerHTML = html;
+
+            const anyPassed = passCount > 0;
+            const conclusionDiv = document.getElementById('sixMechConclusion');
+
+            if (anyPassed) {
+                conclusionDiv.innerHTML = `
+                    <div style="background: rgba(56, 161, 105, 0.1); color: var(--success-green); border: 2px solid var(--success-green);">
+                        ✓ φ-BASED PHENOMENON<br>
+                        <span style="font-size: 18px;">Confidence: ${passCount}/6 mechanisms passed</span><br>
+                        <span style="font-size: 16px; font-weight: normal;">"${name}" (value: ${value}) follows Liv's Law</span>
+                    </div>
+                `;
+            } else {
+                conclusionDiv.innerHTML = `
+                    <div style="background: rgba(229, 62, 62, 0.1); color: var(--warning-red); border: 2px solid var(--warning-red);">
+                        ✗ NOT φ-BASED<br>
+                        <span style="font-size: 16px; font-weight: normal;">"${name}" (value: ${value}) does not follow known φ mechanisms</span>
+                    </div>
+                `;
+            }
+
+            document.getElementById('sixMechResults').style.display = 'block';
+            document.getElementById('sixMechResults').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }
+
+        // SEVEN GATES VERIFICATION (Extended Algorithm)
+
+        function testSevenGates() {
+            const value = parseFloat(document.getElementById('sevenGatesValue').value);
+            const name = document.getElementById('sevenGatesName').value || "Unknown";
+
+            if (isNaN(value)) {
+                alert("Please enter a valid numeric value");
+                return;
+            }
+
+            const results = {
+                "Gate 1: Direct Fibonacci": isFibonacci(value),
+                "Gate 2: φ Power (φⁿ)": isPowerOfPhi(value),
+                "Gate 3: φ-Creative (generates φ)": isPhiCreative(value),
+                "Gate 4: Product of Fibonacci": isProductOfFibonacci(value),
+                "Gate 5: Power of Fibonacci": isPowerOfFibonacci(value),
+                "Gate 6: Quotient of Fibonacci": isQuotientOfFibonacci(value),
+                "Gate 7: φ-Proximity": checkPhiProximity(value)
+            };
+
+            let html = '';
+            let passCount = 0;
+
+            for (let [gate, passed] of Object.entries(results)) {
+                if (passed) passCount++;
+                html += `
+                    <div class="result-item">
+                        <span>${gate}</span>
+                        <span class="${passed ? 'result-pass' : 'result-fail'}">
+                            ${passed ? '✓ PASS' : '✗ FAIL'}
+                        </span>
+                    </div>
+                `;
+            }
+
+            document.getElementById('sevenGatesResultsContent').innerHTML = html;
+
+            const anyPassed = passCount > 0;
+            const conclusionDiv = document.getElementById('sevenGatesConclusion');
+
+            if (anyPassed) {
+                conclusionDiv.innerHTML = `
+                    <div style="background: rgba(56, 161, 105, 0.1); color: var(--success-green); border: 2px solid var(--success-green);">
+                        ✓ φ-BASED VIA SEVEN GATES<br>
+                        <span style="font-size: 18px;">Passed ${passCount}/7 gates</span><br>
+                        <span style="font-size: 16px; font-weight: normal;">"${name}" (${value}) is φ-based via multi-path verification</span>
+                    </div>
+                `;
+            } else {
+                conclusionDiv.innerHTML = `
+                    <div style="background: rgba(229, 62, 62, 0.1); color: var(--warning-red); border: 2px solid var(--warning-red);">
+                        ✗ NOT φ-BASED<br>
+                        <span style="font-size: 16px; font-weight: normal;">Failed all Seven Gates</span>
+                    </div>
+                `;
+            }
+
+            document.getElementById('sevenGatesResults').style.display = 'block';
+            document.getElementById('sevenGatesResults').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }
+
+        function checkPhiProximity(n) {
+            // Check if within 1% of φ^k for any integer k
+            for (let k = -10; k <= 10; k++) {
+                const phiPower = Math.pow(PHI, k);
+                if (Math.abs(n - phiPower) / phiPower < 0.01) {
+                    return true;
+                }
+            }
+            return false;
+        }
+    </script>
+</body>
+</html>

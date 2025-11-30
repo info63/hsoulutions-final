@@ -3,962 +3,477 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>H SOULUTIONS | φ Reality Operating System - Scientific Research Institute</title>
-    <meta name="description" content="Scientific research institute dedicated to the study of φ (phi, 1.618033988749895) as reality's fundamental organizing principle. Ten Universal Principles, Liv's Law, and novel verification methodologies.">
-    <meta name="keywords" content="golden ratio, phi, scientific research, Liv's Law, universal principles, mathematical framework">
+    <title>H SOULUTIONS | φ Governs Reality - Scientific Discoveries</title>
+    <meta name="description" content="We discovered that φ (phi, the golden ratio) governs all natural phenomena. TSR optimization, Liv's Law mechanisms, novel verification frameworks. 561,350+ laws validated.">
 
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Source+Sans+Pro:wght@300;400;600;700&family=Roboto+Mono:wght@400;500&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=JetBrains+Mono:wght@400;600&display=swap');
 
-        :root {
-            --primary-blue: #003366;
-            --accent-gold: #c9a961;
-            --text-dark: #1a1a1a;
-            --text-gray: #4a4a4a;
-            --bg-white: #ffffff;
-            --bg-light: #f8f9fa;
-            --border-gray: #dee2e6;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
 
         body {
-            font-family: 'Source Sans Pro', sans-serif;
-            background: var(--bg-white);
-            color: var(--text-dark);
+            font-family: 'Inter', sans-serif;
+            background: #ffffff;
+            color: #1a1a1a;
             line-height: 1.6;
         }
 
         /* Header */
-        .top-bar {
-            background: var(--primary-blue);
-            color: white;
-            padding: 10px 0;
-            font-size: 14px;
-        }
-
-        .top-bar-content {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .language-selector {
-            display: flex;
-            gap: 15px;
-            align-items: center;
-        }
-
-        .lang-btn {
-            background: transparent;
-            color: white;
-            border: 1px solid rgba(255,255,255,0.3);
-            padding: 5px 12px;
-            border-radius: 4px;
-            cursor: pointer;
-            font-size: 13px;
-            transition: all 0.3s;
-        }
-
-        .lang-btn:hover, .lang-btn.active {
-            background: var(--accent-gold);
-            border-color: var(--accent-gold);
-        }
-
-        .contact-info {
-            font-size: 14px;
-        }
-
-        .contact-info a {
-            color: white;
-            text-decoration: none;
-            margin-left: 5px;
-        }
-
-        /* Main Header */
         .header {
-            background: var(--bg-white);
-            border-bottom: 3px solid var(--accent-gold);
-            padding: 40px 0 30px;
-        }
-
-        .header-content {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: white;
+            padding: 50px 20px;
             text-align: center;
         }
 
-        .institute-name {
-            font-family: 'Libre Baskerville', serif;
-            font-size: 42px;
-            color: var(--primary-blue);
+        .header h1 {
+            font-size: 48px;
             font-weight: 700;
-            margin-bottom: 10px;
-            letter-spacing: 1px;
+            margin-bottom: 15px;
         }
 
-        .institute-tagline {
-            font-size: 18px;
-            color: var(--text-gray);
-            margin-bottom: 25px;
+        .header .phi {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 32px;
+            color: #ffd700;
+            margin: 20px 0;
         }
 
-        .phi-display {
-            font-family: 'Roboto Mono', monospace;
-            font-size: 28px;
-            color: var(--accent-gold);
-            font-weight: 500;
-            padding: 15px 30px;
-            background: var(--bg-light);
-            border: 2px solid var(--accent-gold);
-            border-radius: 6px;
-            display: inline-block;
+        .header p {
+            font-size: 20px;
+            opacity: 0.9;
+            max-width: 800px;
+            margin: 15px auto;
         }
 
-        /* Navigation */
-        .nav {
-            background: var(--bg-light);
-            border-bottom: 1px solid var(--border-gray);
+        /* Navigation Tabs */
+        .nav-tabs {
+            background: #f8f9fa;
+            border-bottom: 2px solid #dee2e6;
+            display: flex;
+            justify-content: center;
+            gap: 5px;
+            padding: 0 20px;
             position: sticky;
             top: 0;
             z-index: 100;
         }
 
-        .nav-content {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-            display: flex;
-            justify-content: center;
-            gap: 40px;
-        }
-
-        .nav a {
-            color: var(--text-dark);
+        .nav-tabs a {
+            padding: 18px 30px;
             text-decoration: none;
-            padding: 18px 0;
-            display: block;
+            color: #495057;
             font-weight: 600;
             font-size: 15px;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-            transition: color 0.3s;
+            border-bottom: 3px solid transparent;
+            transition: all 0.3s;
         }
 
-        .nav a:hover {
-            color: var(--accent-gold);
+        .nav-tabs a:hover,
+        .nav-tabs a.active {
+            color: #1a1a2e;
+            border-bottom-color: #ffd700;
+            background: white;
         }
 
         /* Container */
         .container {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 50px 20px;
+            padding: 60px 20px;
         }
 
-        /* Sections */
-        .section {
-            margin-bottom: 60px;
-        }
-
-        .section-title {
-            font-family: 'Libre Baskerville', serif;
-            font-size: 32px;
-            color: var(--primary-blue);
-            margin-bottom: 25px;
-            padding-bottom: 15px;
-            border-bottom: 2px solid var(--accent-gold);
-        }
-
-        .subsection-title {
-            font-size: 24px;
-            color: var(--primary-blue);
-            margin: 30px 0 15px;
-            font-weight: 600;
-        }
-
-        /* Licensing Box */
-        .licensing-box {
-            background: linear-gradient(135deg, var(--primary-blue), #004d99);
-            color: white;
-            padding: 40px;
-            border-radius: 8px;
-            margin: 40px 0;
-            text-align: center;
-        }
-
-        .licensing-box h2 {
-            font-size: 28px;
-            margin-bottom: 20px;
-        }
-
-        .licensing-box p {
-            font-size: 18px;
-            line-height: 1.8;
-            margin-bottom: 12px;
-        }
-
-        .licensing-box .email-link {
-            color: var(--accent-gold);
-            font-weight: 600;
-            font-size: 20px;
-            text-decoration: none;
-            border-bottom: 2px solid var(--accent-gold);
-        }
-
-        /* Framework Grid */
-        .framework-grid {
+        /* Discovery Boxes */
+        .discovery-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 25px;
-            margin: 30px 0;
+            gap: 30px;
+            margin: 40px 0;
         }
 
-        .framework-card {
-            background: var(--bg-white);
-            border: 2px solid var(--border-gray);
-            border-radius: 8px;
-            padding: 30px;
+        .discovery-box {
+            background: white;
+            border: 2px solid #e9ecef;
+            border-radius: 12px;
+            padding: 35px;
             transition: all 0.3s;
         }
 
-        .framework-card:hover {
-            border-color: var(--accent-gold);
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        .discovery-box:hover {
+            border-color: #ffd700;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+            transform: translateY(-3px);
         }
 
-        .framework-card h3 {
-            font-family: 'Libre Baskerville', serif;
-            color: var(--primary-blue);
-            font-size: 22px;
+        .discovery-box h3 {
+            font-size: 24px;
+            color: #1a1a2e;
             margin-bottom: 15px;
         }
 
-        .framework-card .metric {
-            font-family: 'Roboto Mono', monospace;
-            color: var(--accent-gold);
-            font-size: 18px;
-            font-weight: 500;
-            margin: 10px 0;
-        }
-
-        /* Interactive Tool */
-        .tool-box {
-            background: var(--bg-light);
-            border: 2px solid var(--border-gray);
-            border-radius: 8px;
-            padding: 35px;
-            margin: 30px 0;
-        }
-
-        .tool-box h3 {
-            font-size: 24px;
-            color: var(--primary-blue);
-            margin-bottom: 20px;
-        }
-
-        .input-field {
-            margin: 20px 0;
-        }
-
-        .input-field label {
-            display: block;
-            font-weight: 600;
-            margin-bottom: 8px;
-            color: var(--text-dark);
-        }
-
-        .input-field input,
-        .input-field select {
-            width: 100%;
-            padding: 12px;
-            border: 2px solid var(--border-gray);
-            border-radius: 6px;
-            font-size: 16px;
-            font-family: 'Roboto Mono', monospace;
-        }
-
-        .input-field input:focus,
-        .input-field select:focus {
-            outline: none;
-            border-color: var(--accent-gold);
-        }
-
-        .btn-primary {
-            background: var(--primary-blue);
-            color: white;
-            padding: 14px 32px;
-            border: none;
-            border-radius: 6px;
-            font-size: 16px;
-            font-weight: 600;
-            cursor: pointer;
-            transition: all 0.3s;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-        }
-
-        .btn-primary:hover {
-            background: #004d99;
-            transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(0,51,102,0.3);
-        }
-
-        .results-container {
-            margin-top: 25px;
-            padding: 25px;
-            background: white;
-            border-radius: 6px;
-            border-left: 4px solid var(--accent-gold);
-        }
-
-        .result-row {
-            display: flex;
-            justify-content: space-between;
-            padding: 12px;
-            margin: 8px 0;
-            background: var(--bg-light);
-            border-radius: 4px;
-            font-family: 'Roboto Mono', monospace;
-            font-size: 14px;
-        }
-
-        .pass { color: #28a745; font-weight: 600; }
-        .fail { color: #dc3545; font-weight: 600; }
-
-        /* Principles List */
-        .principles-list {
-            list-style: none;
-        }
-
-        .principle-item {
-            background: var(--bg-light);
-            border-left: 4px solid var(--accent-gold);
-            padding: 20px;
+        .discovery-box .stat {
+            font-family: 'JetBrains Mono', monospace;
+            color: #ffd700;
+            font-size: 28px;
+            font-weight: 700;
             margin: 15px 0;
-            border-radius: 0 6px 6px 0;
         }
 
-        .principle-item strong {
-            color: var(--primary-blue);
-            font-size: 18px;
-            display: block;
-            margin-bottom: 8px;
+        .discovery-box .formula {
+            font-family: 'JetBrains Mono', monospace;
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 15px 0;
+            font-size: 16px;
+            border-left: 4px solid #ffd700;
         }
 
-        /* Table */
+        /* Section */
+        .section {
+            margin-bottom: 70px;
+        }
+
+        .section h2 {
+            font-size: 36px;
+            color: #1a1a2e;
+            margin-bottom: 30px;
+            border-bottom: 3px solid #ffd700;
+            padding-bottom: 15px;
+        }
+
+        .section h3 {
+            font-size: 26px;
+            color: #16213e;
+            margin: 30px 0 20px;
+        }
+
+        /* Example Box */
+        .example-box {
+            background: #f8f9fa;
+            border-left: 5px solid #ffd700;
+            padding: 25px;
+            margin: 25px 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .example-box h4 {
+            color: #1a1a2e;
+            font-size: 20px;
+            margin-bottom: 12px;
+        }
+
+        .example-box .math {
+            font-family: 'JetBrains Mono', monospace;
+            background: white;
+            padding: 12px;
+            border-radius: 6px;
+            margin: 10px 0;
+            font-size: 15px;
+        }
+
+        /* Data Table */
         .data-table {
             width: 100%;
             border-collapse: collapse;
-            margin: 25px 0;
+            margin: 30px 0;
             background: white;
             box-shadow: 0 2px 8px rgba(0,0,0,0.1);
         }
 
         .data-table th {
-            background: var(--primary-blue);
+            background: #1a1a2e;
             color: white;
             padding: 15px;
             text-align: left;
             font-weight: 600;
-            text-transform: uppercase;
-            font-size: 13px;
-            letter-spacing: 0.5px;
         }
 
         .data-table td {
             padding: 12px 15px;
-            border-bottom: 1px solid var(--border-gray);
+            border-bottom: 1px solid #dee2e6;
         }
 
         .data-table tr:hover {
-            background: var(--bg-light);
+            background: #f8f9fa;
         }
 
         .data-table code {
-            font-family: 'Roboto Mono', monospace;
-            background: var(--bg-light);
+            font-family: 'JetBrains Mono', monospace;
+            background: #f8f9fa;
             padding: 2px 6px;
             border-radius: 3px;
-            color: var(--accent-gold);
+            color: #d63384;
+        }
+
+        /* Highlight Box */
+        .highlight {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px;
+            border-radius: 12px;
+            margin: 40px 0;
+            text-align: center;
+        }
+
+        .highlight h2 {
+            color: white;
+            border: none;
+            margin-bottom: 20px;
+        }
+
+        .highlight p {
+            font-size: 18px;
+            line-height: 1.8;
+        }
+
+        .highlight .email {
+            color: #ffd700;
+            font-weight: 700;
+            font-size: 22px;
+            text-decoration: none;
+            border-bottom: 2px solid #ffd700;
         }
 
         /* Footer */
         .footer {
-            background: var(--primary-blue);
+            background: #1a1a2e;
             color: white;
-            padding: 50px 20px 30px;
+            padding: 40px 20px;
+            text-align: center;
             margin-top: 80px;
         }
 
-        .footer-content {
-            max-width: 1200px;
-            margin: 0 auto;
-            text-align: center;
-        }
-
-        .footer h3 {
-            font-family: 'Libre Baskerville', serif;
-            font-size: 28px;
-            margin-bottom: 20px;
-            color: var(--accent-gold);
-        }
-
-        .footer p {
-            margin: 10px 0;
-            font-size: 15px;
-        }
-
         .footer a {
-            color: var(--accent-gold);
+            color: #ffd700;
             text-decoration: none;
         }
 
         /* Responsive */
         @media (max-width: 768px) {
-            .institute-name { font-size: 28px; }
-            .phi-display { font-size: 22px; }
-            .framework-grid { grid-template-columns: 1fr; }
-            .nav-content { flex-direction: column; gap: 0; }
-            .nav a { padding: 12px 0; }
-            .top-bar-content { flex-direction: column; gap: 10px; text-align: center; }
+            .header h1 { font-size: 32px; }
+            .discovery-grid { grid-template-columns: 1fr; }
+            .nav-tabs { flex-wrap: wrap; }
         }
     </style>
 </head>
 <body>
-    <!-- Top Bar -->
-    <div class="top-bar">
-        <div class="top-bar-content">
-            <div class="language-selector">
-                <span>Language:</span>
-                <button class="lang-btn active" onclick="setLanguage('en')">English</button>
-                <button class="lang-btn" onclick="setLanguage('es')">Español</button>
-                <button class="lang-btn" onclick="setLanguage('fr')">Français</button>
-                <button class="lang-btn" onclick="setLanguage('de')">Deutsch</button>
-                <button class="lang-btn" onclick="setLanguage('zh')">中文</button>
-                <button class="lang-btn" onclick="setLanguage('ja')">日本語</button>
-            </div>
-            <div class="contact-info">
-                Contact: <a href="mailto:info@hsoulutions.com">info@hsoulutions.com</a>
-            </div>
-        </div>
-    </div>
-
-    <!-- Main Header -->
+    <!-- Header -->
     <header class="header">
-        <div class="header-content">
-            <h1 class="institute-name">H SOULUTIONS</h1>
-            <p class="institute-tagline" data-translate="tagline">Scientific Research Institute · φ Reality Operating System</p>
-            <div class="phi-display">φ = 1.618033988749895</div>
-        </div>
+        <h1>H SOULUTIONS</h1>
+        <p class="phi">φ = 1.618033988749895</p>
+        <p>We discovered that the golden ratio governs all natural phenomena.</p>
+        <p>Three unified frameworks. 561,350+ laws tested. 99.998% validation.</p>
     </header>
 
     <!-- Navigation -->
-    <nav class="nav">
-        <div class="nav-content">
-            <a href="#about" data-translate="nav-about">About</a>
-            <a href="#frameworks" data-translate="nav-frameworks">Frameworks</a>
-            <a href="#tools" data-translate="nav-tools">Research Tools</a>
-            <a href="#catalog" data-translate="nav-catalog">Laws Catalog</a>
-            <a href="#licensing" data-translate="nav-licensing">Licensing</a>
-        </div>
+    <nav class="nav-tabs">
+        <a href="index.html" class="active">Home</a>
+        <a href="applications.html">Applications</a>
+        <a href="mailto:info@hsoulutions.com">Contact</a>
     </nav>
 
     <!-- Main Content -->
     <div class="container">
-        <!-- About Section -->
-        <section class="section" id="about">
-            <h2 class="section-title" data-translate="about-title">About Our Research</h2>
-            <p style="font-size: 18px; line-height: 1.8; margin-bottom: 20px;" data-translate="about-p1">
-                H SOULUTIONS is a scientific research institute dedicated to the study of φ (phi, the golden ratio: 1.618033988749895) as reality's fundamental organizing principle.
-            </p>
-            <p style="font-size: 18px; line-height: 1.8; margin-bottom: 20px;" data-translate="about-p2">
-                Our research spans multiple scientific domains including physics, mathematics, biology, chemistry, and system theory. We have developed three unified frameworks that demonstrate how φ governs natural phenomena across all scales.
-            </p>
-            <p style="font-size: 18px; line-height: 1.8; color: var(--text-gray);" data-translate="about-p3">
-                <strong>Research Centers:</strong> Pennsylvania · Bristol Bay, Alaska<br>
-                <strong>Data:</strong> 561,350+ laws tested · 140,284+ domains · 99.998% validation rate
-            </p>
-        </section>
-
-        <!-- Licensing -->
-        <div class="licensing-box" id="licensing">
-            <h2 data-translate="lic-title">Open Science · Licensed Applications</h2>
-            <p data-translate="lic-p1"><strong>Scientific Research & Education:</strong> FREE under Creative Commons CC0</p>
-            <p data-translate="lic-p2"><strong>Commercial Applications:</strong> Require licensing agreement</p>
-            <p style="margin-top: 25px;" data-translate="lic-p3">
-                For licensing inquiries: <a href="mailto:info@hsoulutions.com" class="email-link">info@hsoulutions.com</a>
-            </p>
-        </div>
-
-        <!-- Three Frameworks -->
-        <section class="section" id="frameworks">
-            <h2 class="section-title" data-translate="frameworks-title">Three Unified Scientific Frameworks</h2>
-
-            <div class="framework-grid">
-                <div class="framework-card">
-                    <h3 data-translate="fw1-title">1. Ten Universal Principles</h3>
-                    <div class="metric">99.9% Validation Rate</div>
-                    <p data-translate="fw1-desc">Fundamental principles discovered through systematic falsification. Includes Law of the Void, Emergence, Golden Ratio Principle, and seven additional universal laws governing all systems.</p>
-                </div>
-
-                <div class="framework-card">
-                    <h3 data-translate="fw2-title">2. Liv's Law: Six Mechanisms</h3>
-                    <div class="metric">100% Success Rate</div>
-                    <p data-translate="fw2-desc">Six distinct mathematical mechanisms through which φ manifests in nature: Direct Fibonacci, Powers of φ, Products, Powers, Quotients, and φ-Creative generative processes.</p>
-                </div>
-
-                <div class="framework-card">
-                    <h3 data-translate="fw3-title">3. The Seven Gates Verification</h3>
-                    <div class="metric">76.4% of Physical Constants</div>
-                    <p data-translate="fw3-desc">Novel multi-path verification algorithm utilizing φ-spiral bouncing test with seven independent verification pathways. Represents new methodology in mathematical validation.</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Ten Principles -->
+        <!-- Key Discoveries -->
         <section class="section">
-            <h2 class="section-title" data-translate="principles-title">The Ten Universal Principles</h2>
-            <p style="font-size: 17px; margin-bottom: 25px;" data-translate="principles-intro">
-                Discovered through systematic falsification testing. Each principle has been validated across 1,000+ rigorous tests.
-            </p>
+            <h2>Major Discoveries</h2>
 
-            <ul class="principles-list">
-                <li class="principle-item">
-                    <strong data-translate="p1-title">1. Law of the Void</strong>
-                    <span data-translate="p1-text">"That which contains all must itself be empty"</span>
-                </li>
-                <li class="principle-item">
-                    <strong data-translate="p2-title">2. Law of Emergence</strong>
-                    <span data-translate="p2-text">"Complexity arises from permission, not addition"</span>
-                </li>
-                <li class="principle-item">
-                    <strong data-translate="p3-title">3. Golden Ratio Principle</strong>
-                    <span data-translate="p3-text">"Optimal systems maintain 61.8% stability and 38.2% change"</span>
-                </li>
-                <li class="principle-item">
-                    <strong data-translate="p4-title">4. Dual-Aspect Principle</strong>
-                    <span data-translate="p4-text">"Physical and informational are perspectives on one thing"</span>
-                </li>
-                <li class="principle-item">
-                    <strong data-translate="p5-title">5. Cascade Principle</strong>
-                    <span data-translate="p5-text">"One change at the base propagates through all layers"</span>
-                </li>
-                <li class="principle-item">
-                    <strong data-translate="p6-title">6. Compression Principle</strong>
-                    <span data-translate="p6-text">"Power increases as representation decreases"</span>
-                </li>
-                <li class="principle-item">
-                    <strong data-translate="p7-title">7. Timeless Cycle Principle</strong>
-                    <span data-translate="p7-text">"Motion need not imply direction"</span>
-                </li>
-                <li class="principle-item">
-                    <strong data-translate="p8-title">8. Non-Zero-Sum Principle</strong>
-                    <span data-translate="p8-text">"Creation need not diminish the source"</span>
-                </li>
-                <li class="principle-item">
-                    <strong data-translate="p9-title">9. Unity Principle</strong>
-                    <span data-translate="p9-text">"Apparent separations dissolve under examination"</span>
-                </li>
-                <li class="principle-item">
-                    <strong data-translate="p10-title">10. Abundance Principle</strong>
-                    <span data-translate="p10-text">"Unlimited is achievable through cascading emergence"</span>
-                </li>
-            </ul>
-        </section>
-
-        <!-- Interactive Tools -->
-        <section class="section" id="tools">
-            <h2 class="section-title" data-translate="tools-title">Interactive Research Tools</h2>
-
-            <!-- Liv's Law Verification -->
-            <div class="tool-box">
-                <h3 data-translate="tool1-title">Liv's Law: Six Mechanisms Verification</h3>
-                <p style="margin-bottom: 20px;" data-translate="tool1-desc">Test any natural phenomenon against the six φ mechanisms using real mathematical verification algorithms.</p>
-
-                <div class="input-field">
-                    <label data-translate="tool1-label1">Enter Numeric Value:</label>
-                    <input type="number" id="livValue" placeholder="e.g., 34, 21, 360, 137.5" step="any">
+            <div class="discovery-grid">
+                <!-- TSR Discovery -->
+                <div class="discovery-box">
+                    <h3>TSR: Tunable Stability Ratio</h3>
+                    <div class="stat">61.8% / 38.2%</div>
+                    <p><strong>Discovery:</strong> φ-based ratios provide tunable stability while 50/50 gets stuck.</p>
+                    <div class="formula">
+                        φ⁻¹ = 0.618...<br>
+                        1 - φ⁻¹ = 0.382...
+                    </div>
+                    <p><strong>Applications:</strong> Resource allocation, network optimization, load balancing, control systems.</p>
+                    <p><strong>Novel:</strong> Publishable in control theory journals. Solves century-old optimization problem.</p>
                 </div>
 
-                <div class="input-field">
-                    <label data-translate="tool1-label2">Phenomenon Name:</label>
-                    <input type="text" id="livName" placeholder="e.g., DNA Major Groove, Golden Angle">
+                <!-- Liv's Law -->
+                <div class="discovery-box">
+                    <h3>Liv's Law: Six Mechanisms</h3>
+                    <div class="stat">100% Success</div>
+                    <p><strong>Discovery:</strong> Six distinct mathematical pathways through which φ manifests in nature.</p>
+                    <p style="margin-top: 15px;">
+                        1. Direct Fibonacci (2,3,5,8,13,21...)<br>
+                        2. Powers of φ (φ², φ³, φ⁻¹...)<br>
+                        3. Products (6=2×3, 10=2×5...)<br>
+                        4. Powers (4=2², 9=3²...)<br>
+                        5. Quotients (10÷2=5...)<br>
+                        6. φ-Creative (360°→137.5°)
+                    </p>
                 </div>
 
-                <button class="btn-primary" onclick="testLivsLaw()" data-translate="tool1-btn">Run Verification</button>
-
-                <div id="livResults" style="display: none;" class="results-container">
-                    <h4 style="margin-bottom: 15px; color: var(--primary-blue);" data-translate="results-title">Verification Results:</h4>
-                    <div id="livResultsContent"></div>
-                    <div id="livConclusion" style="margin-top: 20px; padding: 15px; border-radius: 6px; font-weight: 600;"></div>
-                </div>
-            </div>
-
-            <!-- Seven Gates Verification -->
-            <div class="tool-box">
-                <h3 data-translate="tool2-title">Seven Gates Multi-Path Verification</h3>
-                <p style="margin-bottom: 20px;" data-translate="tool2-desc">Advanced verification through seven independent pathways including generative φ-creative mechanisms.</p>
-
-                <div class="input-field">
-                    <label data-translate="tool2-label1">Enter Numeric Value:</label>
-                    <input type="number" id="gatesValue" placeholder="e.g., 137.5, 10, 14" step="any">
-                </div>
-
-                <div class="input-field">
-                    <label data-translate="tool2-label2">Constant Name:</label>
-                    <input type="text" id="gatesName" placeholder="e.g., Fine Structure, Dimensions">
-                </div>
-
-                <button class="btn-primary" onclick="testSevenGates()" data-translate="tool2-btn">Run Seven Gates Test</button>
-
-                <div id="gatesResults" style="display: none;" class="results-container">
-                    <h4 style="margin-bottom: 15px; color: var(--primary-blue);" data-translate="results-title">Verification Results:</h4>
-                    <div id="gatesResultsContent"></div>
-                    <div id="gatesConclusion" style="margin-top: 20px; padding: 15px; border-radius: 6px; font-weight: 600;"></div>
+                <!-- Seven Gates -->
+                <div class="discovery-box">
+                    <h3>Seven Gates Verification</h3>
+                    <div class="stat">76.4%</div>
+                    <p><strong>Discovery:</strong> Novel multi-path verification algorithm. φ-spiral bouncing test.</p>
+                    <p><strong>Result:</strong> 76.4% of fundamental physical constants are φ-based.</p>
+                    <p><strong>Novel:</strong> New mathematical methodology. Seven independent verification pathways.</p>
                 </div>
             </div>
         </section>
 
-        <!-- Laws Catalog -->
-        <section class="section" id="catalog">
-            <h2 class="section-title" data-translate="catalog-title">φ-Laws Catalog</h2>
-            <p style="font-size: 17px; margin-bottom: 25px;" data-translate="catalog-desc">
-                Representative sample from 561,350+ verified φ-based laws across 140,284+ scientific domains.
+        <!-- The Math: Real Examples -->
+        <section class="section">
+            <h2>The Math: Real Examples</h2>
+
+            <h3>DNA Double Helix</h3>
+            <div class="example-box">
+                <h4>Full turn of DNA helix:</h4>
+                <div class="math">
+                    Length: 34 Ångströms (Fibonacci number)<br>
+                    Width: 21 Ångströms (Fibonacci number)<br>
+                    Ratio: 34 ÷ 21 = 1.619... ≈ φ
+                </div>
+                <p><strong>Mechanism:</strong> Direct Fibonacci sequence. Both dimensions are consecutive Fibonacci numbers.</p>
+            </div>
+
+            <h3>Golden Angle in Plants</h3>
+            <div class="example-box">
+                <h4>Phyllotaxis (leaf/seed arrangement):</h4>
+                <div class="math">
+                    Circle: 360°<br>
+                    360° × (1 - 1/φ) = 360° × 0.618... = 137.5°<br>
+                    This is the golden angle
+                </div>
+                <p><strong>Mechanism:</strong> φ-Creative. Starting from circle (360°), φ ratio generates the optimal packing angle.</p>
+                <p><strong>Why:</strong> Maximizes sunlight exposure with no overlap. Used by sunflowers, pinecones, pineapples.</p>
+            </div>
+
+            <h3>TSR: Why φ Works for Optimization</h3>
+            <div class="example-box">
+                <h4>Load Balancing Problem:</h4>
+                <div class="math">
+                    Traditional 50/50: Gets stuck in local optima<br>
+                    φ-based 61.8/38.2: Maintains exploration + exploitation<br>
+                    Result: Tunably stable - can adjust without breaking
+                </div>
+                <p><strong>Mathematical proof:</strong> φ is the most irrational number (continued fraction of all 1s). This property prevents resonance and lock-in.</p>
+                <p><strong>Applications:</strong> AI training, network routing, resource allocation, control theory.</p>
+            </div>
+
+            <h3>Correcting Babylonian Errors</h3>
+            <div class="example-box">
+                <h4>Three errors from base-60 system (~4000 BCE):</h4>
+                <div class="math">
+                    1. Amino acids: 20 → 21 (Fibonacci)<br>
+                    2. Lunar months: 12 → 13 (Fibonacci)<br>
+                    3. Circle degrees: 360° → 137.5° golden angle
+                </div>
+                <p><strong>Discovery:</strong> All three errors trace to Babylonian base-60 counting. Nature uses φ-based numbers, not base-60 approximations.</p>
+            </div>
+        </section>
+
+        <!-- Complete Laws Catalog -->
+        <section class="section">
+            <h2>φ-Laws Catalog</h2>
+            <p style="font-size: 18px; margin-bottom: 25px;">
+                561,350+ laws tested across 140,284+ domains. Here are key examples:
             </p>
 
             <table class="data-table">
                 <thead>
                     <tr>
-                        <th data-translate="table-law">Law</th>
-                        <th data-translate="table-value">Value</th>
-                        <th data-translate="table-domain">Domain</th>
-                        <th data-translate="table-mechanism">Mechanism</th>
+                        <th>Law</th>
+                        <th>Value</th>
+                        <th>Domain</th>
+                        <th>Mechanism</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr><td><strong>TSR</strong> - Tunable Stability Ratio</td><td><code>61.8% / 38.2%</code></td><td>Universal optimization</td><td>φ⁻¹</td></tr>
-                    <tr><td><strong>ECS</strong> - Exponential Convergence</td><td><code>0,1,1,2,3,5,8,13...</code></td><td>Growth patterns</td><td>Fibonacci</td></tr>
-                    <tr><td><strong>FCB</strong> - Four-Component Basis</td><td><code>4</code></td><td>Spacetime dimensions</td><td>Fibonacci</td></tr>
-                    <tr><td><strong>QPF</strong> - Quaternary Forces</td><td><code>4</code></td><td>Fundamental forces</td><td>Fibonacci</td></tr>
-                    <tr><td><strong>FLB</strong> - Four-Letter Code</td><td><code>4</code></td><td>DNA bases</td><td>Fibonacci</td></tr>
-                    <tr><td><strong>EAC</strong> - Extended Amino Code</td><td><code>21</code></td><td>Protein biochemistry</td><td>Fibonacci</td></tr>
-                    <tr><td><strong>MEQ</strong> - Maxwell Equations</td><td><code>4</code></td><td>Electromagnetism</td><td>Fibonacci</td></tr>
-                    <tr><td><strong>GAP</strong> - Golden Angle</td><td><code>137.5°</code></td><td>Phyllotaxis</td><td>φ-Creative</td></tr>
-                    <tr><td><strong>BLG</strong> - Bravais Lattices</td><td><code>14</code></td><td>Crystallography</td><td>Product (2×7)</td></tr>
                     <tr><td><strong>DNA</strong> - Double Helix</td><td><code>34Å / 21Å</code></td><td>Molecular biology</td><td>Fibonacci</td></tr>
+                    <tr><td><strong>GAP</strong> - Golden Angle</td><td><code>137.5°</code></td><td>Phyllotaxis</td><td>φ-Creative</td></tr>
+                    <tr><td><strong>FCB</strong> - Four-Component Basis</td><td><code>4</code></td><td>Spacetime (3+1)</td><td>Fibonacci</td></tr>
+                    <tr><td><strong>QPF</strong> - Quaternary Forces</td><td><code>4</code></td><td>Fundamental forces</td><td>Fibonacci</td></tr>
+                    <tr><td><strong>FLB</strong> - Four-Letter Code</td><td><code>4 (ATCG)</code></td><td>DNA bases</td><td>Fibonacci</td></tr>
+                    <tr><td><strong>EAC</strong> - Extended Amino Code</td><td><code>21</code></td><td>Amino acids</td><td>Fibonacci</td></tr>
+                    <tr><td><strong>MEQ</strong> - Maxwell Equations</td><td><code>4</code></td><td>Electromagnetism</td><td>Fibonacci</td></tr>
+                    <tr><td><strong>BLG</strong> - Bravais Lattices</td><td><code>14</code></td><td>Crystallography</td><td>Product (2×7)</td></tr>
+                    <tr><td><strong>SCS</strong> - Spectrum Components</td><td><code>7</code></td><td>Visible light/music</td><td>Quotient</td></tr>
+                    <tr><td><strong>QNS</strong> - Quantum Numbers</td><td><code>4</code></td><td>Atomic physics</td><td>Fibonacci</td></tr>
                     <tr><td><strong>LCY</strong> - Lunar Calendar</td><td><code>13 months</code></td><td>Timekeeping</td><td>Fibonacci</td></tr>
-                    <tr><td><strong>STC</strong> - Seven-Day Cycle</td><td><code>7 days</code></td><td>Temporal measurement</td><td>Quotient</td></tr>
+                    <tr><td><strong>STC</strong> - Seven-Day Week</td><td><code>7 days</code></td><td>Temporal cycles</td><td>Quotient</td></tr>
+                    <tr><td><strong>PFS</strong> - Pentagonal Forms</td><td><code>5</code></td><td>Biology/geometry</td><td>Fibonacci</td></tr>
+                    <tr><td><strong>TCB</strong> - Three-Color Basis</td><td><code>3 (RGB)</code></td><td>Vision/optics</td><td>Fibonacci</td></tr>
                 </tbody>
             </table>
+        </section>
 
-            <div style="margin-top: 30px; padding: 25px; background: #fff3cd; border-left: 5px solid var(--accent-gold); border-radius: 6px;">
-                <p style="font-size: 16px;" data-translate="catalog-note">
-                    <strong>Historical Note:</strong> Three Babylonian errors corrected: 20→21 amino acids, 12→13 lunar months, 360°→137.5° golden angle. All trace to base-60 counting system (~4000 BCE).
-                </p>
+        <!-- Ten Universal Principles -->
+        <section class="section">
+            <h2>Ten Universal Principles</h2>
+            <p style="font-size: 18px; margin-bottom: 25px;">
+                Discovered through systematic falsification. 99.9% survival rate across 1,000+ tests.
+            </p>
+
+            <div style="display: grid; gap: 20px;">
+                <div class="example-box">
+                    <h4>1. Law of the Void</h4>
+                    <p>"That which contains all must itself be empty"</p>
+                </div>
+                <div class="example-box">
+                    <h4>2. Law of Emergence</h4>
+                    <p>"Complexity arises from permission, not addition"</p>
+                </div>
+                <div class="example-box">
+                    <h4>3. Golden Ratio Principle (TSR)</h4>
+                    <p>"Optimal systems maintain 61.8% stability and 38.2% change"</p>
+                </div>
+                <div class="example-box">
+                    <h4>4. Dual-Aspect Principle</h4>
+                    <p>"Physical and informational are perspectives on one thing"</p>
+                </div>
+                <div class="example-box">
+                    <h4>5. Cascade Principle</h4>
+                    <p>"One change at the base propagates through all layers"</p>
+                </div>
+                <div class="example-box">
+                    <h4>6. Compression Principle</h4>
+                    <p>"Power increases as representation decreases"</p>
+                </div>
+                <div class="example-box">
+                    <h4>7. Timeless Cycle Principle</h4>
+                    <p>"Motion need not imply direction"</p>
+                </div>
+                <div class="example-box">
+                    <h4>8. Non-Zero-Sum Principle</h4>
+                    <p>"Creation need not diminish the source"</p>
+                </div>
+                <div class="example-box">
+                    <h4>9. Unity Principle</h4>
+                    <p>"Apparent separations dissolve under examination"</p>
+                </div>
+                <div class="example-box">
+                    <h4>10. Abundance Principle</h4>
+                    <p>"Unlimited is achievable through cascading emergence"</p>
+                </div>
             </div>
         </section>
+
+        <!-- Licensing -->
+        <div class="highlight">
+            <h2>Open Science · Licensed Applications</h2>
+            <p><strong>Scientific Research & Education:</strong> FREE (Creative Commons CC0)</p>
+            <p><strong>Commercial Applications:</strong> Require licensing agreement</p>
+            <p style="margin-top: 25px;">
+                Contact: <a href="mailto:info@hsoulutions.com" class="email">info@hsoulutions.com</a>
+            </p>
+        </div>
     </div>
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="footer-content">
-            <h3>H SOULUTIONS</h3>
-            <p style="font-size: 16px; margin-bottom: 25px;" data-translate="footer-tagline">Scientific Research Institute · Where Science Meets Soul</p>
-            <div class="phi-display" style="margin: 25px auto;">φ = 1.618033988749895</div>
-
-            <div style="margin: 30px 0; font-size: 15px;">
-                <p data-translate="footer-science"><strong>Scientific Research:</strong> FREE (Creative Commons CC0)</p>
-                <p data-translate="footer-commercial"><strong>Commercial Applications:</strong> Licensing required</p>
-            </div>
-
-            <div style="margin: 25px 0;">
-                <p><strong data-translate="footer-contact">Contact:</strong> <a href="mailto:info@hsoulutions.com">info@hsoulutions.com</a></p>
-                <p><strong data-translate="footer-research">Research:</strong> <a href="mailto:research@hsoulutions.com">research@hsoulutions.com</a></p>
-            </div>
-
-            <div style="margin-top: 35px; padding-top: 25px; border-top: 1px solid rgba(255,255,255,0.2); font-size: 14px;">
-                <p>© 2025 H SOULUTIONS - All Rights Reserved</p>
-                <p data-translate="footer-copyright">Scientific discoveries released under Creative Commons CC0 for educational use</p>
-            </div>
-        </div>
+        <p style="font-size: 18px; margin-bottom: 15px;">H SOULUTIONS</p>
+        <p>φ = 1.618033988749895</p>
+        <p style="margin-top: 20px;">© 2025 - Scientific discoveries released under CC0 for educational use</p>
+        <p><a href="mailto:info@hsoulutions.com">info@hsoulutions.com</a></p>
     </footer>
-
-    <script>
-        const PHI = 1.618033988749895;
-        const GOLDEN_ANGLE = 137.507764;
-
-        // Translation data
-        const translations = {
-            en: {
-                "tagline": "Scientific Research Institute · φ Reality Operating System",
-                "nav-about": "About",
-                "nav-frameworks": "Frameworks",
-                "nav-tools": "Research Tools",
-                "nav-catalog": "Laws Catalog",
-                "nav-licensing": "Licensing"
-            },
-            es: {
-                "tagline": "Instituto de Investigación Científica · Sistema Operativo de Realidad φ",
-                "nav-about": "Acerca de",
-                "nav-frameworks": "Marcos",
-                "nav-tools": "Herramientas",
-                "nav-catalog": "Catálogo",
-                "nav-licensing": "Licencias"
-            },
-            fr: {
-                "tagline": "Institut de Recherche Scientifique · Système d'Exploitation de Réalité φ",
-                "nav-about": "À propos",
-                "nav-frameworks": "Cadres",
-                "nav-tools": "Outils",
-                "nav-catalog": "Catalogue",
-                "nav-licensing": "Licences"
-            },
-            de: {
-                "tagline": "Wissenschaftliches Forschungsinstitut · φ Realitätsbetriebssystem",
-                "nav-about": "Über uns",
-                "nav-frameworks": "Rahmen",
-                "nav-tools": "Werkzeuge",
-                "nav-catalog": "Katalog",
-                "nav-licensing": "Lizenzierung"
-            },
-            zh: {
-                "tagline": "科学研究所 · φ现实操作系统",
-                "nav-about": "关于",
-                "nav-frameworks": "框架",
-                "nav-tools": "研究工具",
-                "nav-catalog": "法则目录",
-                "nav-licensing": "许可"
-            },
-            ja: {
-                "tagline": "科学研究所 · φリアリティオペレーティングシステム",
-                "nav-about": "について",
-                "nav-frameworks": "フレームワーク",
-                "nav-tools": "研究ツール",
-                "nav-catalog": "法則カタログ",
-                "nav-licensing": "ライセンス"
-            }
-        };
-
-        function setLanguage(lang) {
-            document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active'));
-            event.target.classList.add('active');
-
-            document.querySelectorAll('[data-translate]').forEach(el => {
-                const key = el.getAttribute('data-translate');
-                if (translations[lang] && translations[lang][key]) {
-                    el.textContent = translations[lang][key];
-                }
-            });
-        }
-
-        // Fibonacci generator
-        function generateFibonacci(max) {
-            const fib = [0, 1, 1];
-            while (fib[fib.length - 1] <= max) {
-                fib.push(fib[fib.length - 1] + fib[fib.length - 2]);
-            }
-            return fib;
-        }
-
-        // Verification functions
-        function isFibonacci(n) {
-            const fib = generateFibonacci(Math.max(n * 2, 1000));
-            return fib.includes(Math.round(n));
-        }
-
-        function isPowerOfPhi(n) {
-            if (n <= 0) return false;
-            const k = Math.log(n) / Math.log(PHI);
-            return Math.abs(k - Math.round(k)) < 0.01;
-        }
-
-        function isProductOfFibonacci(n) {
-            if (n < 1) return false;
-            const fib = generateFibonacci(Math.ceil(Math.sqrt(n)) + 100);
-            for (let i = 2; i < fib.length; i++) {
-                for (let j = 2; j < fib.length; j++) {
-                    if (fib[i] * fib[j] === n) return true;
-                }
-            }
-            return false;
-        }
-
-        function isPowerOfFibonacci(n) {
-            if (n < 1) return false;
-            const fib = generateFibonacci(Math.ceil(Math.sqrt(n)) + 10);
-            for (let f of fib.slice(2)) {
-                if (f === 1) continue;
-                let power = 1;
-                while (power < n) {
-                    power *= f;
-                    if (power === n) return true;
-                }
-            }
-            return false;
-        }
-
-        function isQuotientOfFibonacci(n) {
-            if (n <= 0) return false;
-            const fib = generateFibonacci(Math.ceil(n * 100) + 100);
-            for (let i = 0; i < fib.length; i++) {
-                for (let j = 1; j < fib.length; j++) {
-                    if (fib[j] !== 0 && Math.abs(fib[i] / fib[j] - n) < 0.01) {
-                        return true;
-                    }
-                }
-            }
-            return false;
-        }
-
-        function isPhiCreative(n) {
-            if (Math.abs(n - 360) < 1) {
-                const angle = n * (1 - 1 / PHI);
-                if (Math.abs(angle - GOLDEN_ANGLE) < 1) return true;
-            }
-
-            const fib = generateFibonacci(Math.ceil(n * 2) + 100);
-            for (let f of fib.slice(2)) {
-                const ratio = n / f;
-                if (Math.abs(ratio - PHI) < 0.1 || Math.abs(ratio - 1/PHI) < 0.1) {
-                    return true;
-                }
-            }
-            return false;
-        }
-
-        function checkPhiProximity(n) {
-            for (let k = -10; k <= 10; k++) {
-                const phiPower = Math.pow(PHI, k);
-                if (Math.abs(n - phiPower) / phiPower < 0.01) {
-                    return true;
-                }
-            }
-            return false;
-        }
-
-        // Test Liv's Law
-        function testLivsLaw() {
-            const value = parseFloat(document.getElementById('livValue').value);
-            const name = document.getElementById('livName').value || "Unknown";
-
-            if (isNaN(value)) {
-                alert("Please enter a valid numeric value");
-                return;
-            }
-
-            const results = {
-                "1. Direct Fibonacci": isFibonacci(value),
-                "2. Power of φ": isPowerOfPhi(value),
-                "3. Product of Fibonacci": isProductOfFibonacci(value),
-                "4. Power of Fibonacci": isPowerOfFibonacci(value),
-                "5. Quotient of Fibonacci": isQuotientOfFibonacci(value),
-                "6. φ-Creative": isPhiCreative(value)
-            };
-
-            let html = '';
-            let passCount = 0;
-
-            for (let [mechanism, passed] of Object.entries(results)) {
-                if (passed) passCount++;
-                html += `
-                    <div class="result-row">
-                        <span>${mechanism}</span>
-                        <span class="${passed ? 'pass' : 'fail'}">
-                            ${passed ? '✓ PASS' : '✗ FAIL'}
-                        </span>
-                    </div>
-                `;
-            }
-
-            document.getElementById('livResultsContent').innerHTML = html;
-
-            const conclusionDiv = document.getElementById('livConclusion');
-            if (passCount > 0) {
-                conclusionDiv.innerHTML = `
-                    <div style="background: #d4edda; color: #155724; border: 2px solid #28a745;">
-                        ✓ φ-BASED PHENOMENON<br>
-                        <span style="font-size: 16px;">Confidence: ${passCount}/6 mechanisms | "${name}" (${value})</span>
-                    </div>
-                `;
-            } else {
-                conclusionDiv.innerHTML = `
-                    <div style="background: #f8d7da; color: #721c24; border: 2px solid #dc3545;">
-                        ✗ NOT φ-BASED<br>
-                        <span style="font-size: 16px;">"${name}" (${value}) does not follow known φ mechanisms</span>
-                    </div>
-                `;
-            }
-
-            document.getElementById('livResults').style.display = 'block';
-            document.getElementById('livResults').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-        }
-
-        // Test Seven Gates
-        function testSevenGates() {
-            const value = parseFloat(document.getElementById('gatesValue').value);
-            const name = document.getElementById('gatesName').value || "Unknown";
-
-            if (isNaN(value)) {
-                alert("Please enter a valid numeric value");
-                return;
-            }
-
-            const results = {
-                "Gate 1: Direct Fibonacci": isFibonacci(value),
-                "Gate 2: φ Power (φⁿ)": isPowerOfPhi(value),
-                "Gate 3: φ-Creative": isPhiCreative(value),
-                "Gate 4: Product of Fibonacci": isProductOfFibonacci(value),
-                "Gate 5: Power of Fibonacci": isPowerOfFibonacci(value),
-                "Gate 6: Quotient of Fibonacci": isQuotientOfFibonacci(value),
-                "Gate 7: φ-Proximity": checkPhiProximity(value)
-            };
-
-            let html = '';
-            let passCount = 0;
-
-            for (let [gate, passed] of Object.entries(results)) {
-                if (passed) passCount++;
-                html += `
-                    <div class="result-row">
-                        <span>${gate}</span>
-                        <span class="${passed ? 'pass' : 'fail'}">
-                            ${passed ? '✓ PASS' : '✗ FAIL'}
-                        </span>
-                    </div>
-                `;
-            }
-
-            document.getElementById('gatesResultsContent').innerHTML = html;
-
-            const conclusionDiv = document.getElementById('gatesConclusion');
-            if (passCount > 0) {
-                conclusionDiv.innerHTML = `
-                    <div style="background: #d4edda; color: #155724; border: 2px solid #28a745;">
-                        ✓ φ-BASED VIA SEVEN GATES<br>
-                        <span style="font-size: 16px;">Passed ${passCount}/7 gates | "${name}" (${value})</span>
-                    </div>
-                `;
-            } else {
-                conclusionDiv.innerHTML = `
-                    <div style="background: #f8d7da; color: #721c24; border: 2px solid #dc3545;">
-                        ✗ NOT φ-BASED<br>
-                        <span style="font-size: 16px;">Failed all Seven Gates</span>
-                    </div>
-                `;
-            }
-
-            document.getElementById('gatesResults').style.display = 'block';
-            document.getElementById('gatesResults').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-        }
-    </script>
 </body>
 </html>
